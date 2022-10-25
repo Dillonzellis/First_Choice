@@ -1,10 +1,3 @@
-.container {
-  --max-width: 1500px;
-  --container-padding: 1rem;
-
-  width: min(var(--max-width), 100% - (var(--container-padding) * 2)) !important;
-  margin-inline: auto;
-}
 
 .even-columns {
   display: grid;
@@ -30,4 +23,8 @@
 
 .text-center {
   text-align: center;
+}
+
+.p-0{
+  padding: 0 !important;
 }

@@ -1,0 +1,16 @@
+.wide-container{
+    --max-width: 1750px;
+    --container-padding: 1rem;
+  
+    width: min(var(--max-width), 100% - (var(--container-padding) * 2)) !important;
+    margin-inline: auto;
+}
+
+
+.container-de {
+    --max-width: 1500px;
+    --container-padding: 1rem;
+  
+    width: min(var(--max-width), 100% - (var(--container-padding) * 2)) !important;
+    margin-inline: auto;
+  }

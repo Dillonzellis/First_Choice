@@ -1,1 +1,27 @@
 @use '/src/sass/abstracts/'as *;
+
+.hero-section{
+    background: linear-gradient(359.28deg, #1A4789 11.87%, #000000 194.74%);
+    h1{
+        padding-bottom: 1.75rem;
+    }
+    p{
+        color: $clr-neutral-100;
+        padding-bottom: 1.75rem !important;
+    }
+    .col{
+        // margin: auto;
+        position: relative;
+        img{
+            // position: absolute;
+            // top: 25px;
+            // right: 0;
+            // z-index: 999;
+
+        }
+    }
+}
+
+.hero-swoosh{
+    margin-top: -1px;
+}

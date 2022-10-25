@@ -5,4 +5,4 @@ function gbd_equeue_scripts(){
     
 }
 
-add_action('wp_enqueue_scripts', '_equeue_scripts' );
+add_action('wp_enqueue_scripts', 'gbd_equeue_scripts' );
