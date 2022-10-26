@@ -1,0 +1,10 @@
+@use '/src/sass/abstracts/'as *;
+
+.footer-swooshes{
+    margin-bottom: -2px;
+}
+
+.footer-cta-section{
+    background-color: $clr-primary-300;
+    padding: 3rem 0;
+}

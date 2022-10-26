@@ -21,10 +21,30 @@
   gap: var(--gap, 1rem);
 }
 
+
+.flex-col-center{
+  display: flex;
+  gap: var(--gap, 1rem);
+  flex-direction: column;
+  justify-content: center;
+}
+
+.abs{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
 .text-center {
   text-align: center;
 }
 
 .p-0{
   padding: 0 !important;
+}
+
+.pb-400{
+  padding-bottom: 1rem;
 }

@@ -1,18 +1,22 @@
 @use '/src/sass/abstracts/'as *;
 
-.hero-section{
+.hero-section {
     background: linear-gradient(359.28deg, #1A4789 11.87%, #000000 194.74%);
-    h1{
+
+    h1 {
         padding-bottom: 1.75rem;
     }
-    p{
+
+    p {
         color: $clr-neutral-100;
         padding-bottom: 1.75rem !important;
     }
-    .col{
+
+    .col {
         // margin: auto;
         position: relative;
-        img{
+
+        img {
             // position: absolute;
             // top: 25px;
             // right: 0;
@@ -22,6 +26,81 @@
     }
 }
 
-.hero-swoosh{
+.hero-swoosh {
     margin-top: -1px;
+}
+
+.content-accent-upper-sw {
+margin-left: auto;
+margin-bottom: -7px;
+
+}
+
+.content-section-accent {
+    background-color: $clr-accent-400;
+    padding: 8rem 0;
+
+    p {
+        color: $clr-neutral-100;
+    }
+
+    ul {
+        list-style-image: url('https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue.png');
+        li {
+            color: $clr-neutral-100;
+        }
+    }
+
+.img-wrapper{
+    position: relative;
+    &::before{
+          
+        content: "";
+        top: -225px;
+        right: 19px;
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        // min-width: 742px;
+        border-radius: 100vmax;
+        min-height: 730px;
+        background-color: $clr-primary-400;
+    }
+    img {
+        top: -236px;
+        
+
+    }
+}
+
+
+}
+
+.content-accent-lower-sw {
+margin-top: -2px;
+// margin-left: 4px;
+}
+
+.content-section{
+    &-top-heading{
+        font-weight: $fw-medium;
+        letter-spacing: 3px;
+        color: $clr-neutral-900;
+        font-size: $fs-425;
+        text-transform: uppercase;
+    }
+    &-main-body{
+        color: $clr-primary-400;
+        font-size: $fs-450;
+        font-weight: $fw-semi-bold;
+        span{
+            color: $clr-accent-400;
+        }
+    }
+    &-sub-body{
+        font-weight: $fw-medium;
+    }
+    ul {
+        list-style-image: url('https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue.png');
+    }
 }
