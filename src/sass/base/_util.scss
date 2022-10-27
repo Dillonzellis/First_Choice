@@ -1,3 +1,4 @@
+@use '/src/sass/abstracts/'as *;
 
 .even-columns {
   display: grid;
@@ -43,6 +44,10 @@
 
 .p-0{
   padding: 0 !important;
+}
+
+.pb-200{
+  padding-bottom: 0.5rem !important;
 }
 
 .pb-400{

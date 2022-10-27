@@ -1,3 +1,7 @@
 @use '/src/sass/abstracts/' as *;
 
 $ff-body: $ff-primary;
+
+ul{
+    margin-left: 1.75em;
+}
