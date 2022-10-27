@@ -30,7 +30,7 @@
 }
 
 .abs{
-  position: absolute;
+  position: absolute !important;
 }
 
 .relative{
@@ -47,4 +47,8 @@
 
 .pb-400{
   padding-bottom: 1rem;
+}
+
+.fw-semi-bold{
+  font-weight: $fw-semi-bold;
 }
