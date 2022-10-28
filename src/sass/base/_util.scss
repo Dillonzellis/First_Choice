@@ -179,6 +179,14 @@
   font-size: $fs-425;
 }
 
+.fs-450{
+  font-size: $fs-450;
+}
+
+.fw-medium{
+  font-weight: $fw-medium;
+}
+
 .fw-semi-bold{
   font-weight: $fw-semi-bold;
 }
@@ -187,8 +195,16 @@
   font-weight: $fw-bold;
 }
 
+.clr-primary-400{
+  color: $clr-primary-400;
+}
+
 .clr-neutral-100{
   color: $clr-neutral-100;
+}
+
+.clr-neutral-900{
+  color: $clr-neutral-900;
 }
 
 // Colors
@@ -198,6 +214,10 @@
 
 .bgc-primary-400{
   background-color: $clr-primary-400;
+}
+
+.bgc-accent-400{
+  background-color: $clr-accent-400;
 }
 
 .bgc-neutral-700{

@@ -25,7 +25,6 @@
         }
     
         p {
-    
             max-width: 50ch;
         }
     
@@ -44,10 +43,6 @@
     }
 }
 
-// .hero-swoosh {
-//     margin-top: -1px;
-// }
-
 .content-accent-upper-swoosh {
     margin-bottom: -7.5px;
     display: none;
@@ -58,17 +53,11 @@
 }
 
 .content-section-accent {
-    background-color: $clr-accent-400;
-    // padding: 8rem 0;
     z-index: 888;
     padding: 1rem 0 !important;
 
     @media(min-width: $md) {
         padding: 5rem 0 !important;
-    }
-
-    p {
-        color: $clr-neutral-100;
     }
 
     ul {
@@ -77,40 +66,15 @@
         .first-li {
             list-style-image: url('https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue-highlight.png');
         }
-
-        li {
-            color: $clr-neutral-100;
-        }
     }
 
     .img-wrapper {
         position: relative;
-
         display: none;
-
-
 
         @media(min-width: $lg) {
             display: block
         }
-
-        // &::before {
-
-        //     content: "";
-
-        //     min-width: 100%;
-        //     min-height: 100%;
-        //     position: absolute;
-        //     // min-width: 742px;
-        //     border-radius: 100vmax;
-        //     // min-height: 730px;
-        //     background-color: $clr-primary-400;
-
-        //     @media(min-width:1500px) {
-        //         top: -225px;
-        //         right: 19px;
-        //     }
-        // }
 
         img {
             top: -50px;
@@ -118,11 +82,6 @@
             -webkit-box-shadow: -15px 15px 0px 5px $clr-primary-400;
             -moz-box-shadow: -15px 15px 0px 5px $clr-primary-400;
             border-radius: 100vmax;
-
-            // -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
-            // -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
-            // box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1); 
-
 
             @media(min-width:1100px) {
                 top: -76px;
@@ -135,21 +94,12 @@
             @media(min-width:1400px) {
                 top: -236px;
             }
-
-            // top: -236px;
-
-
-
         }
     }
-
-
 }
 
 .content-accent-lower-swoosh {
-    // margin-top: -2px;
     margin-top: -9.5px;
-
     display: none;
 
     @media(min-width: $md) {
@@ -170,7 +120,6 @@
 
         img {
             width: 202px !important;
-            // margin-left: 45%;
             padding: 2.25rem 0 !important;
 
             @media(min-width: $md) {
@@ -181,30 +130,9 @@
         }
     }
 
-
-
-
-
     &-top-heading {
-        font-weight: $fw-medium;
         letter-spacing: 3px;
-        color: $clr-neutral-900;
-        font-size: $fs-425;
         text-transform: uppercase;
-    }
-
-    &-main-body {
-        color: $clr-primary-400;
-        font-size: $fs-450;
-        font-weight: $fw-semi-bold;
-
-        span {
-            color: $clr-accent-400;
-        }
-    }
-
-    &-sub-body {
-        font-weight: $fw-medium;
     }
 
     ul {
