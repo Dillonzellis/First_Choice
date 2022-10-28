@@ -2,13 +2,13 @@
 
 .even-columns {
   display: grid;
-  gap: 1rem;
 }
 
-@media (min-width: 50em) {
+@media (min-width: $lg) {
   .even-columns {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
+    gap: 1rem;
   }
 }
 
@@ -90,7 +90,7 @@
   position: absolute !important;
 }
 
-.relative{
+.rel{
   position: relative;
 }
 
@@ -122,12 +122,15 @@
   padding-bottom: 1rem;
 }
 
+.pb-475-lg{
+  @media(min-width:$lg){
+    padding-bottom: 1.75rem;
+  }
+}
+
 .mb-400{
   margin-bottom: 1rem;
 }
-
-
-
 
 .content-space-100{
   padding: 0.5rem 0 !important;
@@ -148,6 +151,13 @@
   padding: 1.5rem 0 !important;
   @media(min-width: $lg){
     padding: 3rem 0 !important;
+  }
+}
+
+.content-space-700{
+  padding: 2rem 0 !important;
+  @media(min-width: $lg){
+    padding: 10rem 0 !important;
   }
 }
 

@@ -15,13 +15,15 @@
       --fs-450: 1.5625rem;
       --fs-500: 2.25rem;
       --fs-600: 2.625rem;
-      --fs-700: 3rem
+      --fs-700: 2rem
    }
 
-   // @media(min-width:$md) {
+   @media(min-width:$md) {
 
-   //    --fs-600: 2.25rem;
-   //    --fs-650: 2.5rem;
-   //    --fs-700: 3.75rem
-   // }
+      // --fs-425: 1.25rem;
+      // --fs-450: 1.5625rem;
+      // --fs-500: 2.25rem;
+      // --fs-600: 2.625rem;
+      --fs-700: 3rem
+   }
 }

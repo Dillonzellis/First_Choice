@@ -1,37 +1,54 @@
 @use '/src/sass/abstracts/'as *;
 
+
 .hero-section {
     background: linear-gradient(359.28deg, #1A4789 11.87%, #000000 194.74%);
 
-    h1 {
-        padding-bottom: 1.75rem;
+    @media(min-width:$xl){
+        clip-path: url(#hero-mask);
+        clip-rule: nonzero;
     }
 
-    p {
-        color: $clr-neutral-100;
-        padding-bottom: 1.75rem !important;
-    }
+    .container-de{
+        padding: 1rem 0 !important;
+        @media(min-width: $xl){
+            padding-top: 7rem !important;
+            padding-bottom: 10rem !important;
+        }
 
-    .col {
-        // margin: auto;
-        position: relative;
-
-        img {
-            // position: absolute;
-            // top: 25px;
-            // right: 0;
-            // z-index: 999;
-
+        h1 {
+            line-height: 1.25;
+    
+            @media(min-width: $lg) {
+                line-height: 1.5;
+            }
+        }
+    
+        p {
+    
+            max-width: 50ch;
+        }
+    
+        .col-img {
+            img {
+                display: none;
+        
+                @media(min-width:$lg){
+                    display: block;
+                }
+                @media(min-width:$xl){
+                    margin-top: -100px;
+                }
+            }
         }
     }
 }
 
-.hero-swoosh {
-    margin-top: -1px;
-}
+// .hero-swoosh {
+//     margin-top: -1px;
+// }
 
 .content-accent-upper-swoosh {
-    // margin-left: auto;
     margin-bottom: -7.5px;
     display: none;
 
@@ -43,8 +60,6 @@
 .content-section-accent {
     background-color: $clr-accent-400;
     // padding: 8rem 0;
-
-
     z-index: 888;
     padding: 1rem 0 !important;
 
@@ -107,7 +122,7 @@
             // -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
             // -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
             // box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1); 
-        
+
 
             @media(min-width:1100px) {
                 top: -76px;
