@@ -1,3 +1,5 @@
+@use '/src/sass/abstracts/'as *;
+
 .wide-container{
     --max-width: 1750px;
     --container-padding: 1rem;
@@ -13,4 +15,17 @@
   
     width: min(var(--max-width), 100% - (var(--container-padding) * 2)) !important;
     margin-inline: auto;
+  }
+
+
+  .even-columns {
+    display: grid;
+  }
+  
+  @media (min-width: $lg) {
+    .even-columns {
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+      gap: 1rem;
+    }
   }
