@@ -1,0 +1,31 @@
+@use '/src/sass/abstracts/'as *;
+
+.nav {
+    padding: 0.5rem 0 !important;
+
+    &-row-col {
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // gap: 2rem;
+
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 3fr;
+        align-items: center;
+
+        .mega-menu-link {
+            color: $clr-primary-400;
+            font-weight: $fw-semi-bold !important;
+        }
+    }
+
+    .et_pb_image{
+        margin: unset !important;
+    }
+}
+
+// #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item{
+//     @media(min-width:$xxl){
+//         margin-right: 30px;
+//     }
+// }

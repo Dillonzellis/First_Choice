@@ -1,7 +1,7 @@
 @use '/src/sass/abstracts/'as *;
 
 .carousel-section {
-
+    padding: 0 !important;
 
     @media(min-width:$md) {
         margin-bottom: -143px;
@@ -62,7 +62,8 @@
     .et_pb_blurb_0.et_pb_blurb,
     .et_pb_blurb_1.et_pb_blurb {
         margin-bottom: 1rem !important;
-        @media(min-width:$md){
+
+        @media(min-width:$md) {
             margin-bottom: 3rem !important;
         }
     }

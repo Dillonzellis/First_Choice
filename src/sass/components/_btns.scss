@@ -11,9 +11,6 @@
   padding: 0.8em 1.25em !important;
   font-weight: $fw-bold;
   line-height: 1;
-  // color: $clr-neutral-100;
-  // background-color: $clr-accent-400;
-  // box-shadow: 0 1.125em 1em -1em $clr-accent-500;
   font-size: $fs-button;
 
   transform: scale(1);
@@ -47,5 +44,59 @@
   box-shadow: 0 1.125em 1em -1em $clr-primary-300;
   a{
     color: $clr-neutral-100;
+  }
+}
+
+
+// nav btns
+
+.nav-btn {
+  display: inline-flex !important;
+  // display: inline-block;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  text-transform: capitalize !important;
+  border: 0;
+  border-radius: 7px !important;
+  padding: 0 !important;
+  font-weight: $fw-bold !important;
+  line-height: 1 !important;
+  font-size: $fs-button !important;
+
+  transform: scale(1) !important;
+  transition: transform 200ms ease !important;
+
+  border: 3px solid $clr-primary-400 !important;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05) translateY(-.125em);
+
+    &::before {
+      opacity: .3;
+    }
+  }
+}
+
+.nav-btn-light {
+  color: $clr-primary-400 !important;
+  background-color: $clr-neutral-100 !important;
+  border: 3px solid $clr-primary-400 !important;
+  box-shadow: 0 1.125em 1em -1em $clr-primary-300 !important;
+  a{
+    color: $clr-primary-400 !important;
+  }
+}
+
+.nav-btn-dark {
+  color: $clr-neutral-100 !important;
+  background-color: $clr-primary-400 !important;
+  box-shadow: 0 1.125em 1em -1em $clr-primary-300 !important;
+  a{
+    color: $clr-neutral-100 !important;
+  }
+
+  @media(min-width:$md){
+    margin-right: 1rem !important;
   }
 }
