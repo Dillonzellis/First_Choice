@@ -11,13 +11,17 @@
   }
   
   .pb-400{
-    padding-bottom: 1rem;
+    padding-bottom: 1rem !important;
   }
   
   .pb-475-lg{
     @media(min-width:$lg){
       padding-bottom: 1.75rem;
     }
+  }
+
+  .m-0{
+    margin: 0 !important;
   }
   
   .mb-400{

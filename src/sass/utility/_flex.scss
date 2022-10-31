@@ -18,6 +18,13 @@
       gap: var(--gap, 1rem);
     }
   }
+
+  .flex-xl{
+    @media(min-width:$xl){
+      display: flex;
+      gap: var(--gap, 1rem);
+    }
+  }
   
   .flex-col{
     display: flex;

@@ -21,3 +21,21 @@
       text-align: start;
     }
   }
+
+  .z-200{
+    z-index: 200;
+  }
+
+  .display-lg{
+    display: none !important;
+    @media(min-width: $lg){
+      display: block !important;
+    }
+  }
+
+  .display-xl{
+    display: none !important;
+    @media(min-width: $xl){
+      display: block !important;
+    }
+  }

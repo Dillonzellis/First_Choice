@@ -24,8 +24,8 @@
     }
 }
 
-// #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item{
-//     @media(min-width:$xxl){
-//         margin-right: 30px;
-//     }
-// }
+#mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item{
+    @media(min-width:$xxl){
+        margin-right: 30px;
+    }
+}
