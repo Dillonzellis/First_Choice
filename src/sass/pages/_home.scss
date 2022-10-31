@@ -32,10 +32,10 @@
             img {
                 display: none;
         
-                @media(min-width:$lg){
+                @media(min-width:$xl){
                     display: block;
                 }
-                @media(min-width:$xl){
+                @media(min-width:$xxl){
                     margin-top: -100px;
                 }
             }
@@ -108,12 +108,17 @@
 }
 
 .content-section {
+    padding: 1rem 0 !important;
+
+    @media(min-width: $md) {
+        padding: 0 !important;
+    }
 
     .img-module {
         display: flex;
         justify-content: center;
 
-        @media(min-width: $md) {
+        @media(min-width: $lg) {
             display: unset;
             justify-content: unset;
         }
@@ -122,7 +127,7 @@
             width: 202px !important;
             padding: 2.25rem 0 !important;
 
-            @media(min-width: $md) {
+            @media(min-width: $lg) {
                 width: auto !important;
                 margin-left: unset !important;
                 padding: unset !important;

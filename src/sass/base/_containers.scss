@@ -15,6 +15,9 @@
   
     width: min(var(--max-width), 100% - (var(--container-padding) * 2)) !important;
     margin-inline: auto;
+    @media(min-width:$md){
+      --container-padding: 3rem;
+    }
   }
 
 
