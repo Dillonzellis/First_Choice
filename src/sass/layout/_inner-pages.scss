@@ -1,0 +1,27 @@
+@use '/src/sass/abstracts/'as *;
+
+.inner-hero {
+    z-index: 100;
+
+    img {
+        border-radius: 26px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+}
+
+.inner-content {
+    @media(min-width:$lg) {
+        margin-top: -135px;
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        list-style-image: url('https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue.png');
+        margin-left: 3em;
+
+        .first-li {
+            list-style-image: url('https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue-highlight-red.png');
+        }
+    }
+}
