@@ -3,22 +3,45 @@
 .inner-hero {
     z-index: 100;
 
+    .flex-col-center {
+        width: 100%;
+
+        @media(min-width: $xl) {
+            width: 47.25%;
+        }
+    }
+
     img {
         border-radius: 26px;
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
+    // ul {
+    //     list-style-image: url('https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue.png');
+    //     margin-left: 3em;
+
+    //     .first-li {
+    //         list-style-image: url('https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue-highlight-red.png');
+    //     }
+    // }
+
 }
 
 .inner-content {
-    @media(min-width:$lg) {
-        margin-top: -135px;
+    @media(min-width:$xl) {
+        margin-top: -111px;
         margin-bottom: 2rem;
+    }
+
+    .container-de {
+        .flex-lg {
+            --gap: 0;
+        }
     }
 
     ul {
         list-style-image: url('https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue.png');
-        margin-left: 3em;
+        margin-left: 2em;
 
         .first-li {
             list-style-image: url('https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue-highlight-red.png');
