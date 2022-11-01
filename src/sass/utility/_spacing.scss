@@ -28,6 +28,27 @@
     margin-bottom: 1rem;
   }
 
+  .mb-600{
+    margin-bottom: 2rem;
+  }
+
+  .mb-700{
+    margin-bottom: 3rem;
+  }
+
+  .mb-700-max-lg{
+    @media(max-width:$lg){
+      margin-bottom: 3rem;
+    }
+  }
+
+  .mb-700-min-lg{
+    @media(min-width:$lg){
+      margin-bottom: 3rem;
+    }
+  }
+
+
 //   Content Spacing
   
   .content-space-100{
@@ -46,7 +67,7 @@
   }
   
   .content-space-400{
-    padding: 1.5rem 0 !important;
+    padding: 2rem 0 !important;
     @media(min-width: $lg){
       padding: 3rem 0 !important;
     }
