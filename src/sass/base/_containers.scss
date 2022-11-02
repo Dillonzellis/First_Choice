@@ -1,11 +1,14 @@
 @use '/src/sass/abstracts/'as *;
 
-.wide-container{
-    --max-width: 1750px;
-    --container-padding: 1rem;
-  
-    width: min(var(--max-width), 100% - (var(--container-padding) * 2)) !important;
-    margin-inline: auto;
+.sm-container{
+  --max-width: 1080px;
+  --container-padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--container-padding) * 2)) !important;
+  margin-inline: auto;
+  @media(min-width:$md){
+    --container-padding: 3rem;
+  }
 }
 
 
@@ -19,6 +22,17 @@
       --container-padding: 3rem;
     }
   }
+
+  .wide-container{
+    --max-width: 1750px;
+    --container-padding: 1rem;
+  
+    width: min(var(--max-width), 100% - (var(--container-padding) * 2)) !important;
+    margin-inline: auto;
+    @media(min-width:$md){
+      --container-padding: 3rem;
+    }
+}
 
 
   .even-columns {
