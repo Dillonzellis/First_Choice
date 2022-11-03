@@ -1,0 +1,7 @@
+@use '/src/sass/abstracts/'as *;
+
+.identity-flex{
+    @media(min-width: $md){
+        gap: 2rem;
+    }
+}
