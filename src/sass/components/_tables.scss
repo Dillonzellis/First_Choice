@@ -191,3 +191,14 @@
     }
 
 }
+
+.privacy-table{
+   table{
+    th{
+        padding: 0.25rem 0.5rem;
+        @media(min-width:$sm){
+            padding: 0.5rem 1rem;
+        }
+    }
+   } 
+}

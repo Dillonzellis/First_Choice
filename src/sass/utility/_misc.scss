@@ -4,4 +4,10 @@
     box-shadow: 0 0 0 100vmax var(--clr-primary-400);
     clip-path: inset(0 -100vmax);
   }
+
+  .highlight-a{
+    a{
+        color: $clr-accent-400;
+    }
+}
   

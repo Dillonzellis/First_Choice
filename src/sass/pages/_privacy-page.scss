@@ -1,0 +1,22 @@
+@use '/src/sass/abstracts/'as *;
+
+// .privacy-accordion {
+//     @media(min-width: $xxl) {
+//         margin-top: -100px;
+//     }
+// }
+
+.patriot-act{
+    img{
+        border-radius: 26px;
+        margin-inline: auto;
+       
+        @media(min-width:$md){
+            width: 50% !important;
+        }
+        @media(min-width:$lg){
+            width: 75% !important;   
+            
+        }
+    }
+}
