@@ -10,20 +10,6 @@
             width: 47.25%;
         }
     }
-
-    // img {
-    //    width: 694px;
-    // }
-
-    // ul {
-    //     list-style-image: url('https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue.png');
-    //     margin-left: 3em;
-
-    //     .first-li {
-    //         list-style-image: url('https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue-highlight-red.png');
-    //     }
-    // }
-
 }
 
 .inner-content {
@@ -47,3 +33,23 @@
         }
     }
 }
+
+// Content Section Images
+
+.img-rd{
+    img{
+      border-radius: 26px;
+    }
+  }
+  
+  .img-shadow{
+    img{
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+  
+  .content-img-size{
+    img{
+      width: 600px;
+    }
+  }

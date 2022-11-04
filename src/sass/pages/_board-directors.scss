@@ -1,0 +1,18 @@
+@use '/src/sass/abstracts/'as *;
+
+.bod{
+    @media(min-width: $xl){
+        margin-top: -129px;
+    }
+    .content-space-150{
+        @media(min-width: 1350px){
+            padding: 0 !important;
+        }
+    }
+    .board-img{
+        img{
+            width: 300px;
+        }
+    }
+}
+
