@@ -51,3 +51,11 @@
   // .upper{
   //   text-transform: uppercase;
   // }
+
+  // Hyperlinks
+
+  .highlight-a{
+    a{
+        color: $clr-accent-400;
+    }
+}

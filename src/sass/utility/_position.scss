@@ -33,6 +33,20 @@
     }
   }
 
+  // .display-flex-lg{
+  //   display: none !important;
+  //   @media(min-width: $lg){
+  //     display: flex !important;
+  //   }
+  // }
+
+  .display-flex-xl{
+    display: none !important;
+    @media(min-width: $xl){
+      display: flex !important;
+    }
+  }
+
   .display-xl{
     display: none !important;
     @media(min-width: $xl){
