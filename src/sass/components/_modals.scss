@@ -11,18 +11,18 @@
     gap: 1rem;
 }
 
-.modal-window-content{
-    @include breakpoint(40em){
-        padding: 1rem 2rem;
-    }
-}
-
-
-// @media(min:40em) {
-//     .modal-window-content {
+// .modal-window-content{
+//     @include breakpoint(40em){
 //         padding: 1rem 2rem;
 //     }
 // }
+
+
+@media(min:40em) {
+    .modal-window-content {
+        padding: 1rem 2rem;
+    }
+}
 
 .modal-window-content h3 {
     font-size: $fs-600;
