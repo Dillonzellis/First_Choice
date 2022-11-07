@@ -16,10 +16,14 @@
                 &:not(:last-child){
                     margin-bottom: 0.5rem;
                 }
-                @media(min-width:$lg) {
+                @include breakpoint(lg){
                     display: block;
                     margin-bottom: 0;
                 }
+                // @media(min-width:$lg) {
+                //     display: block;
+                //     margin-bottom: 0;
+                // }
             }
         }
 
