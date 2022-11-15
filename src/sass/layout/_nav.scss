@@ -34,6 +34,12 @@
     // grid-template-columns: 0.5fr 0.5fr 3fr;
     // align-items: center;
 
+    @include breakpoint(md) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     .mega-menu-link {
       color: $clr-primary-400;
       font-weight: $fw-semi-bold !important;

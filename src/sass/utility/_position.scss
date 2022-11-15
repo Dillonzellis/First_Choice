@@ -1,55 +1,70 @@
-@use '/src/sass/abstracts/'as *;
+@use "/src/sass/abstracts/" as *;
 
-.abs{
-    position: absolute !important;
-  }
-  
-  .rel{
-    position: relative;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  .text-start {
+.abs {
+  position: absolute !important;
+}
+
+.rel {
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-start-lg {
+  @media (min-width: $lg) {
     text-align: start;
   }
-  
-  .text-start-lg{
-    @media(min-width:$lg){
-      text-align: start;
-    }
-  }
+}
 
-  .z-200{
-    z-index: 200;
-  }
+.z-200 {
+  z-index: 200;
+}
 
-  .display-lg{
-    display: none !important;
-    @media(min-width: $lg){
-      display: block !important;
-    }
-  }
+.z-300 {
+  z-index: 300;
+}
 
-  // .display-flex-lg{
-  //   display: none !important;
-  //   @media(min-width: $lg){
-  //     display: flex !important;
-  //   }
-  // }
+.z-400 {
+  z-index: 400 !important;
+}
 
-  .display-flex-xl{
-    display: none !important;
-    @media(min-width: $xl){
-      display: flex !important;
-    }
+.display-lg {
+  display: none !important;
+  @media (min-width: $lg) {
+    display: block !important;
   }
+}
 
-  .display-xl{
-    display: none !important;
-    @media(min-width: $xl){
-      display: block !important;
-    }
+.display-xxl {
+  display: none !important;
+  @media (min-width: $xxl) {
+    display: block !important;
   }
+}
+
+// .display-flex-lg{
+//   display: none !important;
+//   @media(min-width: $lg){
+//     display: flex !important;
+//   }
+// }
+
+.display-flex-xl {
+  display: none !important;
+  @media (min-width: $xl) {
+    display: flex !important;
+  }
+}
+
+.display-xl {
+  display: none !important;
+  @media (min-width: $xl) {
+    display: block !important;
+  }
+}

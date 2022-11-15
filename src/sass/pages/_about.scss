@@ -2,6 +2,35 @@
 @use "/src/sass/base/" as *;
 
 .page-template-about {
+  .about-section {
+    @include breakpoint(xxl) {
+      margin-top: rem(-45);
+    }
+
+    img {
+      width: 37.5rem;
+    }
+  }
+
+  .content-accent-upper-swoosh {
+    @include breakpoint(lg) {
+      margin-top: rem(-46);
+    }
+
+    @include breakpoint(xxl) {
+      margin-top: rem(-173);
+    }
+  }
+
+  .why-us {
+    img {
+      box-shadow: -15px 15px 0px 5px $clr-primary-400;
+      -webkit-box-shadow: -15px 15px 0px 5px $clr-primary-400;
+      -moz-box-shadow: -15px 15px 0px 5px $clr-primary-400;
+      border-radius: 100vmax;
+    }
+  }
+
   .content-section-accent {
     padding: 0 !important;
     img {
