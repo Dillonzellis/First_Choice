@@ -25,6 +25,12 @@
       gap: var(--gap, 1rem);
     }
   }
+
+  .flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   .flex-col{
     display: flex;
