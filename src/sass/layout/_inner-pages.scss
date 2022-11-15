@@ -1,61 +1,68 @@
-@use '/src/sass/abstracts/'as *;
+@use "/src/sass/abstracts/" as *;
+@use "/src/sass/base/" as *;
 
 .inner-hero {
-    z-index: 100;
+  z-index: 100;
 
-    .flex-col-center {
-        width: 100%;
+  .flex-col-center {
+    width: 100%;
 
-        @media(min-width: $xl) {
-            width: 47.25%;
-        }
+    @media (min-width: $xl) {
+      width: 47.25%;
     }
+  }
 }
 
 .inner-content {
-    @media(min-width:$xl) {
-        margin-top: -111px;
-        margin-bottom: 2rem;
-    }
+  @media (min-width: $xl) {
+    margin-top: -111px;
+    margin-bottom: 2rem;
+  }
 
-    .container-de {
-        .flex-lg {
-            --gap: 0;
-        }
+  .container-de {
+    .flex-lg {
+      --gap: 0;
     }
+  }
 
-    ul {
-        list-style-image: url('https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue.png');
-        margin-left: 2em;
+  ul {
+    list-style-image: url("https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue.png");
+    margin-left: 2em;
 
-        .first-li {
-            list-style-image: url('https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue-highlight-red.png');
-        }
+    .first-li {
+      list-style-image: url("https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue-highlight-red.png");
     }
+  }
 }
 
 // Content Section Images
 
-.img-rd{
-    img{
-      border-radius: 26px;
-    }
+.img-rd {
+  img {
+    border-radius: 26px;
   }
-  
-  .img-shadow{
-    img{
-      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-  }
-  
-  .content-img-size{
-    img{
-      width: 600px;
-    }
-  }
+}
 
-  .content-img-size-200{
-    img{
-      width: 350px;
-    }
+.img-shadow {
+  img {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   }
+}
+
+.content-img-size {
+  img {
+    // width: 600px;
+    width: rem(600);
+  }
+}
+
+.content-img-size-400 {
+  width: rem(450);
+}
+
+.content-img-size-200 {
+  img {
+    // width: 350px;
+    width: rem(350);
+  }
+}

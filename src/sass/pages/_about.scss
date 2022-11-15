@@ -1,0 +1,11 @@
+@use "/src/sass/abstracts/" as *;
+@use "/src/sass/base/" as *;
+
+.page-template-about {
+  .content-section-accent {
+    padding: 0 !important;
+    img {
+      top: 0;
+    }
+  }
+}

@@ -1,49 +1,64 @@
-@use '/src/sass/abstracts/'as *;
+@use "/src/sass/abstracts/" as *;
 // @use '/src/sass/base/functions' as f;
 
-.sm-container{
+.sm-container {
   --max-width: 1080px;
   --container-padding: 1rem;
 
-  width: min(var(--max-width), 100% - (var(--container-padding) * 2)) !important;
+  width: min(
+    var(--max-width),
+    100% - (var(--container-padding) * 2)
+  ) !important;
   margin-inline: auto;
-  @media(min-width:$md){
+  @media (min-width: $md) {
     --container-padding: 3rem;
   }
 }
 
-
 .container-de {
-    --max-width: 1500px;
-    --container-padding: 1rem;
-  
-    width: min(var(--max-width), 100% - (var(--container-padding) * 2)) !important;
-    margin-inline: auto;
-    @media(min-width:$md){
-      --container-padding: 3rem;
-    }
-  }
+  --max-width: 1500px;
+  --container-padding: 1rem;
 
-  .wide-container{
-    --max-width: 1750px;
-    --container-padding: 1rem;
-  
-    width: min(var(--max-width), 100% - (var(--container-padding) * 2)) !important;
-    margin-inline: auto;
-    @media(min-width:$md){
-      --container-padding: 3rem;
-    }
+  width: min(
+    var(--max-width),
+    100% - (var(--container-padding) * 2)
+  ) !important;
+  margin-inline: auto;
+  @media (min-width: $md) {
+    --container-padding: 3rem;
+  }
 }
 
+.wide-container {
+  --max-width: 1750px;
+  --container-padding: 1rem;
 
+  width: min(
+    var(--max-width),
+    100% - (var(--container-padding) * 2)
+  ) !important;
+  margin-inline: auto;
+  @media (min-width: $md) {
+    --container-padding: 3rem;
+  }
+}
+
+.even-columns {
+  display: grid;
+}
+
+@media (min-width: $lg) {
   .even-columns {
-    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 1rem;
   }
-  
-  @media (min-width: $lg) {
-    .even-columns {
-      grid-auto-flow: column;
-      grid-auto-columns: 1fr;
-      gap: 1rem;
-    }
-  }
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}

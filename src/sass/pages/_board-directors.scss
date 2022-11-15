@@ -1,24 +1,23 @@
-@use '/src/sass/abstracts/'as *;
-@use '/src/sass/base/'as *;
+@use "/src/sass/abstracts/" as *;
+@use "/src/sass/base/" as *;
 
-.bod{
-    // @media(min-width: $xl){
-    //     margin-top: -129px;
-    // }
+.bod {
+  // @media(min-width: $xl){
+  //     margin-top: -129px;
+  // }
 
-    @include breakpoint(xl){
-        margin-top: -129px;
-    }
+  // @include breakpoint(xl){
+  //     margin-top: -129px;
+  // }
 
-    .content-space-150{
-        @media(min-width: 1350px){
-            padding: 0 !important;
-        }
+  .content-space-150 {
+    @media (min-width: 1350px) {
+      padding: 0 !important;
     }
-    .board-img{
-        img{
-            width: 300px;
-        }
+  }
+  .board-img {
+    img {
+      width: 300px;
     }
+  }
 }
-
