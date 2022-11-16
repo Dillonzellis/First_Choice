@@ -1,0 +1,21 @@
+@use "/src/sass/abstracts/" as *;
+@use "/src/sass/base/" as *;
+
+.locations-section {
+  .locations-container {
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .location-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h3 {
+      text-decoration: underline;
+    }
+  }
+}
