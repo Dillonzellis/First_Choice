@@ -15,7 +15,7 @@
 
 .inner-content {
   @media (min-width: $xl) {
-    margin-top: -111px;
+    margin-top: -72px;
     margin-bottom: 2rem;
   }
 
@@ -32,5 +32,11 @@
     .first-li {
       list-style-image: url("https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue-highlight-red.png");
     }
+  }
+}
+
+.inner-content-mt-0 {
+  @media (min-width: $xl) {
+    margin-top: 0;
   }
 }

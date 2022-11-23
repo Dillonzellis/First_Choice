@@ -1,4 +1,4 @@
-@use '/src/sass/abstracts/'as *;
+@use "/src/sass/abstracts/" as *;
 
 // Padding & Margin
 
@@ -15,7 +15,7 @@
 }
 
 .pb-475-lg {
-  @media(min-width:$lg) {
+  @media (min-width: $lg) {
     padding-bottom: 1.75rem;
   }
 }
@@ -41,25 +41,25 @@
 }
 
 .mb-400-max-lg {
-  @media(max-width:$lg) {
+  @media (max-width: $lg) {
     margin-bottom: 1rem;
   }
 }
 
 .mb-400-max-xl {
-  @media(max-width:$xl) {
+  @media (max-width: $xl) {
     margin-bottom: 1rem;
   }
 }
 
 .mb-700-max-lg {
-  @media(max-width:$lg) {
+  @media (max-width: $lg) {
     margin-bottom: 3rem;
   }
 }
 
 .mb-700-min-lg {
-  @media(min-width:$lg) {
+  @media (min-width: $lg) {
     margin-bottom: 3rem;
   }
 }
@@ -81,11 +81,10 @@
 // Width
 
 .w-100-max-lg {
-  @media(max-width:$lg) {
+  @media (max-width: $lg) {
     width: 100% !important;
   }
 }
-
 
 //   Content Spacing
 
@@ -100,7 +99,7 @@
 .content-space-200 {
   padding: 1rem 0 !important;
 
-  @media(min-width:$lg) {
+  @media (min-width: $lg) {
     padding: 1.5rem 0 !important;
   }
 }
@@ -108,27 +107,35 @@
 .content-space-400 {
   padding: 2rem 0 !important;
 
-  @media(min-width: $lg) {
+  @media (min-width: $lg) {
     padding: 3rem 0 !important;
+  }
+}
+
+.content-space-500 {
+  padding: 2rem 0 !important;
+
+  @media (min-width: $lg) {
+    padding: 5rem 0 !important;
   }
 }
 
 .content-space-700 {
   padding: 2rem 0 !important;
 
-  @media(min-width: $lg) {
+  @media (min-width: $lg) {
     padding: 10rem 0 !important;
   }
 }
 
 .content-space-0-lg {
-  @media(min-width:$lg) {
+  @media (min-width: $lg) {
     padding: 0 !important;
   }
 }
 
 .content-space-200-lg {
-  @media(min-width:$lg) {
+  @media (min-width: $lg) {
     padding: 1.5rem 0 !important;
   }
 }

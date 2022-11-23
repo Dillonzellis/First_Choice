@@ -1,154 +1,153 @@
-@use '/src/sass/abstracts/'as *;
-
+@use "/src/sass/abstracts/" as *;
 
 .hero-section {
-    // background: linear-gradient(359.28deg, #1A4789 11.87%, #000000 194.74%);
+  // background: linear-gradient(359.28deg, #1A4789 11.87%, #000000 194.74%);
 
-    @media(min-width:$xl){
-        clip-path: url(#hero-mask);
-        clip-rule: nonzero;
+  @media (min-width: $xl) {
+    clip-path: url(#hero-mask);
+    clip-rule: nonzero;
+  }
+
+  .container-de {
+    padding: 1rem 0 !important;
+    @media (min-width: $xl) {
+      padding-top: 7rem !important;
+      padding-bottom: 10rem !important;
     }
 
-    .container-de{
-        padding: 1rem 0 !important;
-        @media(min-width: $xl){
-            padding-top: 7rem !important;
-            padding-bottom: 10rem !important;
-        }
+    // h1 {
+    //     line-height: 1.25;
 
-        h1 {
-            line-height: 1.25;
-    
-            @media(min-width: $lg) {
-                line-height: 1.5;
-            }
+    //     @media(min-width: $lg) {
+    //         line-height: 1.5;
+    //     }
+    // }
+
+    // p {
+    //     max-width: 50ch;
+    // }
+
+    .col-img {
+      img {
+        display: none;
+
+        @media (min-width: $xl) {
+          display: block;
         }
-    
-        // p {
-        //     max-width: 50ch;
-        // }
-    
-        .col-img {
-            img {
-                display: none;
-        
-                @media(min-width:$xl){
-                    display: block;
-                }
-                @media(min-width:$xxl){
-                    margin-top: -100px;
-                }
-            }
+        @media (min-width: $xxl) {
+          margin-top: -100px;
         }
+      }
     }
+  }
 }
 
 .content-accent-upper-swoosh {
-    margin-bottom: -7.5px;
-    display: none;
+  margin-bottom: -7.5px;
+  display: none;
 
-    @media(min-width: $md) {
-        display: block
-    }
+  @media (min-width: $md) {
+    display: block;
+  }
 }
 
 .content-section-accent {
-    z-index: 888;
-    padding: 1rem 0 !important;
+  z-index: 888;
+  padding: 1rem 0 !important;
 
-    @media(min-width: $md) {
-        padding: 5rem 0 !important;
+  @media (min-width: $md) {
+    padding: 5rem 0 !important;
+  }
+
+  ul {
+    list-style-image: url("https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue.png");
+
+    .first-li {
+      list-style-image: url("https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue-highlight.png");
+    }
+  }
+
+  .img-wrapper {
+    position: relative;
+    display: none;
+
+    @media (min-width: $lg) {
+      display: block;
     }
 
-    ul {
-        list-style-image: url('https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue.png');
+    img {
+      top: -50px;
+      box-shadow: -15px 15px 0px 5px $clr-primary-400;
+      -webkit-box-shadow: -15px 15px 0px 5px $clr-primary-400;
+      -moz-box-shadow: -15px 15px 0px 5px $clr-primary-400;
+      border-radius: 100vmax;
 
-        .first-li {
-            list-style-image: url('https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue-highlight.png');
-        }
+      @media (min-width: 1100px) {
+        top: -76px;
+      }
+
+      @media (min-width: 1200px) {
+        top: -120px;
+      }
+
+      @media (min-width: 1400px) {
+        top: -236px;
+      }
     }
-
-    .img-wrapper {
-        position: relative;
-        display: none;
-
-        @media(min-width: $lg) {
-            display: block
-        }
-
-        img {
-            top: -50px;
-            box-shadow: -15px 15px 0px 5px $clr-primary-400;
-            -webkit-box-shadow: -15px 15px 0px 5px $clr-primary-400;
-            -moz-box-shadow: -15px 15px 0px 5px $clr-primary-400;
-            border-radius: 100vmax;
-
-            @media(min-width:1100px) {
-                top: -76px;
-            }
-
-            @media(min-width:1200px) {
-                top: -120px;
-            }
-
-            @media(min-width:1400px) {
-                top: -236px;
-            }
-        }
-    }
+  }
 }
 
 .content-accent-lower-swoosh {
-    margin-top: -9.5px;
-    display: none;
+  margin-top: -9.5px;
+  display: none;
 
-    @media(min-width: $md) {
-        display: block
-    }
+  @media (min-width: $md) {
+    display: block;
+  }
 }
 
 .content-section {
-    padding: 1rem 0 !important;
+  padding: 1rem 0 !important;
 
-    @media(min-width: $md) {
-        padding: 0 !important;
+  @media (min-width: $md) {
+    padding: 0 !important;
+  }
+
+  .img-module {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $lg) {
+      display: unset;
+      justify-content: unset;
     }
 
-    .img-module {
-        display: flex;
-        justify-content: center;
+    img {
+      width: 202px !important;
+      padding: 2.25rem 0 !important;
 
-        @media(min-width: $lg) {
-            display: unset;
-            justify-content: unset;
-        }
+      @media (min-width: $lg) {
+        width: auto !important;
+        margin-left: unset !important;
+        padding: unset !important;
+      }
+    }
+  }
 
-        img {
-            width: 202px !important;
-            padding: 2.25rem 0 !important;
+  &-top-heading {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
 
-            @media(min-width: $lg) {
-                width: auto !important;
-                margin-left: unset !important;
-                padding: unset !important;
-            }
-        }
+  ul {
+    list-style-image: url("https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue.png");
+
+    .first-li {
+      list-style-image: url("https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue-highlight-red.png");
     }
 
-    &-top-heading {
-        letter-spacing: 3px;
-        text-transform: uppercase;
+    li::marker {
+      margin-top: 50px;
     }
-
-    ul {
-        list-style-image: url('https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue.png');
-
-        .first-li {
-            list-style-image: url('https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue-highlight-red.png');
-        }
-
-        li::marker {
-            margin-top: 50px;
-        }
-    }
+  }
 }

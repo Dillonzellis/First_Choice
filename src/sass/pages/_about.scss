@@ -2,14 +2,20 @@
 @use "/src/sass/base/" as *;
 
 .page-template-about {
+  .inner-hero {
+    .ch-width {
+      width: 70ch;
+    }
+  }
+
   .about-section {
-    @include breakpoint(xxl) {
-      margin-top: rem(-45);
+    @include breakpoint(lg) {
+      margin-bottom: rem(-59);
     }
 
-    img {
-      width: 37.5rem;
-    }
+    // img {
+    //   width: 37.5rem;
+    // }
   }
 
   .content-accent-upper-swoosh {
@@ -23,18 +29,12 @@
   }
 
   .why-us {
-    img {
-      box-shadow: -15px 15px 0px 5px $clr-primary-400;
-      -webkit-box-shadow: -15px 15px 0px 5px $clr-primary-400;
-      -moz-box-shadow: -15px 15px 0px 5px $clr-primary-400;
-      border-radius: 100vmax;
-    }
-  }
-
-  .content-section-accent {
-    padding: 0 !important;
-    img {
-      top: 0;
-    }
+    margin-top: -34px;
+    // img {
+    //   box-shadow: -15px 15px 0px 5px $clr-primary-400;
+    //   -webkit-box-shadow: -15px 15px 0px 5px $clr-primary-400;
+    //   -moz-box-shadow: -15px 15px 0px 5px $clr-primary-400;
+    //   border-radius: 100vmax;
+    // }
   }
 }

@@ -1,6 +1,15 @@
+@use "../abstracts/" as *;
+@use "../base/" as *;
+
 .img-rd {
   img {
     border-radius: 26px;
+  }
+}
+
+.img-rd-200 {
+  img {
+    border-radius: 10px;
   }
 }
 

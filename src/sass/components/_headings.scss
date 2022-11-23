@@ -1,52 +1,57 @@
-@use '../abstracts/'as *;
+@use "../abstracts/" as *;
+@use "../base/" as *;
 
 .primary-heading {
-    font-size: $fs-primary-heading;
-    font-family: $ff-primary;
-    span{
-        color: $clr-accent-400;
-    }
+  font-size: $fs-primary-heading;
+  font-family: $ff-accent;
+  span {
+    color: $clr-accent-400;
+  }
+  @include breakpoint(lg) {
+    line-height: 1.125;
+  }
 }
 
 .secondary-heading {
-    font-size: $fs-secondary-heading;
-    font-family: $ff-primary;
-    font-weight: $fw-bold;
-    span{
-        color: $clr-accent-400;
-    }
+  font-size: $fs-secondary-heading;
+  font-family: $ff-accent;
+  font-weight: $fw-bold;
+  span {
+    color: $clr-accent-400;
+  }
 }
 
 .secondary-heading-light {
-    font-size: $fs-secondary-heading;
-    font-family: $ff-primary;
-    font-weight: $fw-bold;
-    color: $clr-neutral-100;
+  font-size: $fs-secondary-heading;
+  font-family: $ff-accent;
+  font-weight: $fw-bold;
+  color: $clr-neutral-100;
 }
 
 .secondary-heading-dark {
-    font-size: $fs-secondary-heading;
-    font-family: $ff-primary;
-    font-weight: $fw-bold;
+  font-size: $fs-secondary-heading;
+  font-family: $ff-accent;
+  font-weight: $fw-bold;
+  color: $clr-primary-400;
+}
+
+.content-heading {
+  font-size: $fs-content-heading;
+  font-family: $ff-accent;
+  font-weight: $fw-bold;
+  line-height: 1.125;
+}
+
+.content-heading-light {
+  color: $clr-neutral-100;
+  span {
     color: $clr-primary-400;
+  }
 }
 
-.content-heading{
-    font-size: $fs-content-heading;
-    font-family: $ff-primary;
-    font-weight: $fw-bold;
-}
-
-.content-heading-light{
-    color: $clr-neutral-100;
-    span{
-        color: $clr-primary-400;
-    }
-}
-
-.content-heading-dark{
-    color: $clr-primary-400;
-    span{
-        color: $clr-accent-400;
-    }
+.content-heading-dark {
+  color: $clr-primary-400;
+  span {
+    color: $clr-accent-400;
+  }
 }
