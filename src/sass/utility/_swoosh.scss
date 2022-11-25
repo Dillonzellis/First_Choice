@@ -1,4 +1,4 @@
-// @use "/src/sass/abstracts/" as *;
+@use "/src/sass/abstracts/" as *;
 
 // .swooshhh {
 //   @media (min-width: $xl) {
@@ -6,3 +6,12 @@
 //     clip-rule: nonzero;
 //   }
 // }
+
+.blue-svg-wrapper {
+  .top-svg {
+    margin-top: -229px;
+  }
+  .bot-svg {
+    margin-bottom: -124px;
+  }
+}
