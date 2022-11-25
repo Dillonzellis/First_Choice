@@ -4,7 +4,7 @@
 .page-template-about {
   .inner-hero {
     .ch-width {
-      width: 70ch;
+      max-width: 70ch;
     }
   }
 
@@ -29,7 +29,10 @@
   }
 
   .why-us {
-    margin-top: -34px;
+    @include breakpoint(lg) {
+      margin-top: -34px;
+    }
+
     // img {
     //   box-shadow: -15px 15px 0px 5px $clr-primary-400;
     //   -webkit-box-shadow: -15px 15px 0px 5px $clr-primary-400;

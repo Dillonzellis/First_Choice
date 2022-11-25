@@ -10,6 +10,10 @@
   //     margin-top: -129px;
   // }
 
+  @include breakpoint-down(md) {
+    margin-top: 1rem;
+  }
+
   .content-space-150 {
     @media (min-width: 1350px) {
       padding: 0 !important;

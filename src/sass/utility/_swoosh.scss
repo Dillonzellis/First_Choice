@@ -9,9 +9,34 @@
 
 .blue-svg-wrapper {
   .top-svg {
-    margin-top: -229px;
+    // display: none;
+    // @include breakpoint(md) {
+    //   display: unset;
+    // }
+    @include breakpoint(xxl) {
+      margin-top: -229px;
+    }
   }
+
+  .blue-bar {
+    min-height: 16px;
+    color: $clr-primary-400;
+    background-color: $clr-primary-400;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    @include breakpoint(md) {
+      min-height: 100px;
+    }
+  }
+
   .bot-svg {
-    margin-bottom: -124px;
+    display: none;
+    @include breakpoint(md) {
+      display: unset;
+    }
+    @include breakpoint(xxl) {
+      margin-bottom: -124px;
+      display: unset;
+    }
   }
 }

@@ -41,6 +41,13 @@
   }
 }
 
+.display-xl {
+  display: none !important;
+  @media (min-width: $xl) {
+    display: block !important;
+  }
+}
+
 .display-xxl {
   display: none !important;
   @media (min-width: $xxl) {
@@ -59,12 +66,5 @@
   display: none !important;
   @media (min-width: $xl) {
     display: flex !important;
-  }
-}
-
-.display-xl {
-  display: none !important;
-  @media (min-width: $xl) {
-    display: block !important;
   }
 }

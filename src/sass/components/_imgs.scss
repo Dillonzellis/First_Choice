@@ -27,7 +27,10 @@
 }
 
 .content-img-size-400 {
-  width: rem(450);
+  width: rem(250);
+  @include breakpoint(lg) {
+    width: rem(450);
+  }
 }
 
 .content-img-size-200 {
