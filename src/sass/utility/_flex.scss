@@ -89,6 +89,12 @@
   }
 }
 
+.flex-row-xl {
+  @media (min-width: $xl) {
+    flex-direction: row;
+  }
+}
+
 .j-center {
   justify-content: center;
 }
