@@ -60,6 +60,18 @@
   order: 1;
 }
 
+.order-1-max-lg {
+  @include breakpoint-down(lg) {
+    order: 1;
+  }
+}
+
 .order-2 {
   order: 2;
+}
+
+.order-2-max-lg {
+  @include breakpoint-down(lg) {
+    order: 2;
+  }
 }

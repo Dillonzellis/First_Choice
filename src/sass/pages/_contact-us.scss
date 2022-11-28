@@ -19,3 +19,23 @@
     }
   }
 }
+
+.cu-service-section {
+  .li-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    @include breakpoint(lg) {
+      flex-direction: row;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .highlight-a {
+    @include breakpoint-down(lg) {
+      margin-top: 1rem;
+    }
+  }
+}
