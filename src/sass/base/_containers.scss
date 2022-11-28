@@ -56,6 +56,15 @@
   }
 }
 
+.even-columns-xl {
+  display: grid;
+  @media (min-width: $xl) {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
 .order-1 {
   order: 1;
 }
@@ -66,12 +75,24 @@
   }
 }
 
+.order-1-max-xl {
+  @include breakpoint-down(xl) {
+    order: 1;
+  }
+}
+
 .order-2 {
   order: 2;
 }
 
 .order-2-max-lg {
   @include breakpoint-down(lg) {
+    order: 2;
+  }
+}
+
+.order-2-max-xl {
+  @include breakpoint-down(xl) {
     order: 2;
   }
 }

@@ -68,6 +68,12 @@
   }
 }
 
+.mb-900-min-xl {
+  @media (min-width: $xl) {
+    margin-bottom: 4rem !important;
+  }
+}
+
 .mt-0 {
   margin-top: 0 !important;
 }

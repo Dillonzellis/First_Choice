@@ -1,0 +1,12 @@
+.li-branding {
+  list-style-image: url("https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue.png");
+  margin-left: 2em;
+
+  .first-li {
+    list-style-image: url("https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue-highlight-red.png");
+  }
+
+  .none {
+    list-style-image: none;
+  }
+}
