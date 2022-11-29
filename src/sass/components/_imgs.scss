@@ -26,6 +26,13 @@
   }
 }
 
+.content-img-size-500 {
+  width: rem(450);
+  @include breakpoint(xxl) {
+    width: rem(600);
+  }
+}
+
 .content-img-size-400 {
   width: rem(250);
   @include breakpoint(lg) {
