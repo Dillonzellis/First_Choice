@@ -1,4 +1,4 @@
-@use "/src/sass/abstracts/" as *;
+@use "/src/sass/abstracts/"as *;
 
 // .swooshhh {
 //   @media (min-width: $xl) {
@@ -9,6 +9,7 @@
 
 .blue-svg-wrapper {
   .top-svg {
+
     // display: none;
     // @include breakpoint(md) {
     //   display: unset;
@@ -24,6 +25,7 @@
     background-color: $clr-primary-400;
     margin-top: -3px;
     margin-bottom: -3px;
+
     @include breakpoint(md) {
       min-height: 50px;
     }
@@ -31,12 +33,26 @@
 
   .bot-svg {
     display: none;
+
     @include breakpoint(md) {
       display: unset;
     }
+
     @include breakpoint(xxl) {
       margin-bottom: -124px;
       display: unset;
     }
+  }
+}
+
+.wide-sw-fix {
+  @media(min-width:1800px) {
+    margin-top: -2px;
+  }
+}
+
+.wide-sw-fix-500 {
+  @media(min-width:1800px) {
+    margin-top: -5px !important;
   }
 }
