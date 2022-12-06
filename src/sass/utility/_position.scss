@@ -16,6 +16,10 @@
   text-align: start;
 }
 
+.text-end {
+  text-align: end;
+}
+
 .text-start-lg {
   @media (min-width: $lg) {
     text-align: start;
@@ -36,6 +40,7 @@
 
 .display-lg {
   display: none !important;
+
   @media (min-width: $lg) {
     display: block !important;
   }
@@ -43,6 +48,7 @@
 
 .display-xl {
   display: none !important;
+
   @media (min-width: $xl) {
     display: block !important;
   }
@@ -50,6 +56,7 @@
 
 .display-xxl {
   display: none !important;
+
   @media (min-width: $xxl) {
     display: block !important;
   }
@@ -65,6 +72,7 @@
 
 .display-flex-xl {
   display: none !important;
+
   @media (min-width: $xl) {
     display: flex !important;
   }

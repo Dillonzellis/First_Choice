@@ -78,6 +78,18 @@
   margin-top: 0 !important;
 }
 
+.mt-500 {
+  margin-top: 2rem;
+}
+
+.mt-700-min-xl {
+  @include breakpoint(xl) {
+    margin-top: 6rem;
+  }
+}
+
+
+
 .m-inline-auto {
   margin-inline: auto !important;
 }
