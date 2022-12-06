@@ -32,9 +32,12 @@
 
   &-row-col {
     // display: flex;
-    // justify-content: center;
+    // justify-content: space-between;
     // align-items: center;
     // gap: 2rem;
+    img{
+      width: 140px !important;
+    }
 
     // display: grid;
     // grid-template-columns: 0.5fr 0.5fr 3fr;
@@ -44,6 +47,15 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    @include breakpoint(lg) {
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: center;
+      img{
+        width: unset !important;
+      }
     }
 
     .mega-menu-link {
@@ -83,5 +95,11 @@
 #mega-menu-primary-menu {
   @include breakpoint-down(md) {
     background-color: $clr-primary-400 !important;
+  }
+}
+
+.mega-menu-open{
+  .nav-row-col{
+    display: block !important;
   }
 }
