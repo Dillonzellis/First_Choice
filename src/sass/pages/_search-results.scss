@@ -1,0 +1,45 @@
+@use '/src/sass/abstracts/'as *;
+
+.search-results {
+
+    .container{
+        // &::before{
+        //     content: unset !important;
+        // }
+        .post-meta {
+            display: none;
+        }
+    
+        #left-area {
+            // width: 100%;
+            .entry-title{
+                font-size: 1.5rem;
+                color: $clr-primary-400;
+            }
+        }
+    
+        #sidebar {
+            // display: none !important;
+            .is-layout-flow {
+                display: none;
+            }
+
+            .wp-block-latest-posts__list {
+                display: none;
+            }
+
+            .wp-block-search__button {
+                background-color: $clr-primary-400;
+                color: #fff;
+            }
+        }
+
+        .pagination {
+            a {
+                color: $clr-accent-400;
+            }
+        }
+    }
+
+
+}
