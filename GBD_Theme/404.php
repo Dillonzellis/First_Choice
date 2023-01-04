@@ -5,19 +5,17 @@ Template Name: 404
 ?>
 <?php get_header(); ?>
 
-<div id="main-content">
-	<div class="container">
-		<div id="content-area" class="clearfix">
-			<div id="left-area">
-				<article id="post-0" <?php post_class( 'et_pb_post not_found' ); ?>>
-					<?php get_template_part( 'includes/no-results', '404' ); ?>
-				</article>
-			</div>
 
-			<?php get_sidebar(); ?>
+
+		<div class="container-de text-center flex-col content-space-400">
+			<h1 class="primary-heading">Page Not Found</h1>
+            <div>The page you're after no longer exists here.</div>
+            <div class="btn-wrapper">
+                <div class="btn btn-dark"><a href="https://dev4.growthbydesign.org/">Back To Home</a></div>
+            </div>
 		</div>
-	</div>
-</div>
+
+
 
 <?php
 

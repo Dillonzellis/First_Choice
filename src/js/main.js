@@ -1,4 +1,4 @@
-console.log('working');
+// console.log('working');
 
 // when .mega-menu-open toggle .nav-row-col display flex
 
@@ -10,14 +10,14 @@ const navRowCol = document.querySelector(".nav-row-col");
 
 let toggleFlex = () => {
     navRowCol.style.display = "none";
-    console.log('clciked')
+    // console.log('clciked')
 }
 
 const checking = () => {
     if (testing.classList.contains('.mega-menu-open')) {
-        console.log('eureka');
+        // console.log('eureka');
     }
-    console.log('something');
+    // console.log('something');
 }
 
 megaMenuToggle.addEventListener('click', checking)
