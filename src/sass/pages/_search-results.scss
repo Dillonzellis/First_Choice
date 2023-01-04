@@ -1,6 +1,6 @@
 @use '/src/sass/abstracts/'as *;
 
-.search-results {
+.search-results, .search-no-results  {
 
     .container{
         // &::before{
