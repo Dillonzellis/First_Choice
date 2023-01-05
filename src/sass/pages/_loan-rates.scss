@@ -1,0 +1,38 @@
+@use "/src/sass/abstracts/"as *;
+
+.loan-rates {
+    display: grid;
+    @include breakpoint(lg){
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    border: 1px solid black;
+
+    .col {
+        text-align: center;
+
+        .thead {
+            border: 0.5px solid black;
+        }
+
+        // .wrapper {
+        //     border: 1px solid black;
+        // }
+
+        .bt-none {
+            border-top: none;
+        }
+
+        .bl-none{
+            border-left: none;
+        }
+
+        .br-none{
+            border-right: none;
+        }
+
+        .bb-none {
+            border-bottom: none;
+        }
+    }
+}
