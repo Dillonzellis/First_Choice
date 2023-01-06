@@ -10,6 +10,7 @@
 
   .container-de {
     padding: 1rem 0 !important;
+
     @media (min-width: $xl) {
       padding-top: 7rem !important;
       padding-bottom: 10rem !important;
@@ -34,6 +35,7 @@
         @media (min-width: $xl) {
           display: block;
         }
+
         @media (min-width: $xxl) {
           margin-top: -100px;
         }
@@ -150,4 +152,17 @@
       margin-top: 50px;
     }
   }
+}
+
+.styled-list {
+  list-style-image: url("https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue.png");
+
+  .first-li {
+    list-style-image: url("https://dev4.growthbydesign.org/wp-content/uploads/2022/10/checkmark-blue-highlight-red.png");
+  }
+
+  li::marker {
+    margin-top: 50px;
+  }
+
 }
