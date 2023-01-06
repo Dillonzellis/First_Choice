@@ -137,6 +137,31 @@
   gap: 1rem;
 }
 
+.gap-500-min-md {
+  @include breakpoint(md) {
+    gap: 2rem;
+  }
+}
+
 .gap-500 {
   gap: 2rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-3-min-md {
+  @include breakpoint(md) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+.j-items-center {
+  justify-items: center;
+}
+
+.items-end {
+  align-items: flex-end;
 }

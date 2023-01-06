@@ -1,12 +1,12 @@
-@use '/src/sass/abstracts/'as *;
+@use '/src/sass/abstracts/' as *;
 @use '/src/sass/base/functions' as f;
 
 .carousel-section {
     padding: 0 !important;
 
-    @include breakpoint(md){
+    @include breakpoint(xl) {
         margin-bottom: f.rem(-143);
-        margin-top: f.rem(-12);
+        margin-top: f.rem(-60);
     }
 
     // @media(min-width:$md) {
@@ -69,9 +69,10 @@
     .et_pb_blurb_1.et_pb_blurb {
         margin-bottom: 1rem !important;
 
-        @include breakpoint(md){
+        @include breakpoint(md) {
             margin-bottom: 3rem !important;
         }
+
         // @media(min-width:$md) {
         //     margin-bottom: 3rem !important;
         // }

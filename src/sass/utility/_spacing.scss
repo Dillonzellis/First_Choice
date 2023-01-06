@@ -20,14 +20,28 @@
   }
 }
 
-.py-100{
+.py-100 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
 
-.py-200{
+.py-200 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+// .py-400-max-md {
+//   @include breakpoint-down(md) {
+//     padding-top: 1rem;
+//     padding-bottom: 1rem;
+//   }
+// }
+
+.py-400-max-xl {
+  @include breakpoint-down(xl) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .m-0 {
