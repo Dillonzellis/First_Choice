@@ -1,0 +1,42 @@
+.carousel-de {
+    width: 100%;
+    height: 722px;
+    /* border-radius: 100vmax; */
+    margin-top: -265px;
+
+    .carousel-btn-de {
+        position: relative;
+        z-index: 5;
+    }
+
+    .slide {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        border-radius: 100vmax;
+
+        transition: 200ms opacity ease-in-out;
+        transition-delay: 200ms;
+
+
+        box-shadow: -15px 15px 0px 5px #012C6D;
+        -webkit-box-shadow: -15px 15px 0px 5px #012C6D;
+        -moz-box-shadow: -15px 15px 0px 5px #012C6D;
+
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 100vmax;
+        }
+    }
+
+    .slide[data-active] {
+        opacity: 1;
+        z-index: 1;
+        transition-delay: 0ms;
+    }
+}

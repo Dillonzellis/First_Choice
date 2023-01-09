@@ -1,4 +1,5 @@
-@use "/src/sass/abstracts/" as *;
+@use '/src/sass/abstracts/' as *;
+@use '/src/sass/base' as *;
 
 .abs {
   position: absolute !important;
@@ -62,10 +63,19 @@
   }
 }
 
-
-.display-flex-lg{
+.display-xxl-5 {
   display: none !important;
-  @media(min-width: $lg){
+
+  @include breakpoint(xxl-5) {
+    display: block !important;
+  }
+}
+
+
+.display-flex-lg {
+  display: none !important;
+
+  @media(min-width: $lg) {
     display: flex !important;
   }
 }
