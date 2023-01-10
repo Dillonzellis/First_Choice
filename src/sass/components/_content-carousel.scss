@@ -4,24 +4,24 @@
     /* border-radius: 100vmax; */
     margin-top: -265px;
 
-    .carousel-btn-de {
-        position: relative;
-        z-index: 5;
-    }
+    // .carousel-btn-de {
+    //     position: relative;
+    //     z-index: 5;
+    // }
 
     .slide {
         position: absolute;
         inset: 0;
-        opacity: 0;
+        // opacity: 0;
         border-radius: 100vmax;
 
-        transition: 200ms opacity ease-in-out;
-        transition-delay: 200ms;
+        // transition: 200ms opacity ease-in-out;
+        // transition-delay: 200ms;
 
 
-        box-shadow: -15px 15px 0px 5px #012C6D;
-        -webkit-box-shadow: -15px 15px 0px 5px #012C6D;
-        -moz-box-shadow: -15px 15px 0px 5px #012C6D;
+        // box-shadow: -15px 15px 0px 5px #012C6D;
+        // -webkit-box-shadow: -15px 15px 0px 5px #012C6D;
+        // -moz-box-shadow: -15px 15px 0px 5px #012C6D;
 
 
         img {
@@ -31,12 +31,90 @@
             object-fit: cover;
             object-position: center;
             border-radius: 100vmax;
+
+            box-shadow: -15px 15px 0px 5px #012C6D;
+            -webkit-box-shadow: -15px 15px 0px 5px #012C6D;
+            -moz-box-shadow: -15px 15px 0px 5px #012C6D;
         }
     }
 
-    .slide[data-active] {
-        opacity: 1;
-        z-index: 1;
-        transition-delay: 0ms;
+    // .slide[data-active] {
+    //     opacity: 1;
+    //     z-index: 1;
+    //     transition-delay: 0ms;
+    // }
+}
+
+
+
+
+
+.slide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 6s;
+}
+
+.flip {
+    animation-name: flip;
+    animation-duration: 6s;
+
+    // -webkit-transform: rotateY(-180deg);
+    // transform: rotateY(-180deg);
+}
+
+// -webkit-animation: in 1s 200ms  forwards, out 1s 1200ms forwards;
+
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
     }
+
+    10% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    // 90% {
+    //     opacity: 0.9;
+    // }
+
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes flip {
+    0% {
+        // opacity: 0;
+        -webkit-transform: rotateY(0deg);
+    }
+
+    25% {
+        -webkit-transform: rotateY(-180deg)
+    }
+
+    // 50% {
+    //     opacity: 1;
+    // }
+
+
+    100% {
+        // opacity: 1;
+        -webkit-transform: rotateY(-180deg);
+    }
+
 }
