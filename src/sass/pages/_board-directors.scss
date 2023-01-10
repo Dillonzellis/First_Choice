@@ -10,6 +10,8 @@
   //     margin-top: -129px;
   // }
 
+
+
   @include breakpoint-down(md) {
     margin-top: 1rem;
   }
@@ -19,8 +21,13 @@
       padding: 0 !important;
     }
   }
+
   .board-img {
     img {
+      @include breakpoint-down(lg) {
+        max-width: 200px;
+      }
+
       width: 300px;
     }
   }
