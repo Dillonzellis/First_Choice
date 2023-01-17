@@ -1,0 +1,5 @@
+@use '/src/sass/abstracts/' as *;
+
+.notification-bar {
+    border-bottom: 5px solid $clr-accent-400;
+}
